@@ -1,0 +1,57 @@
+*{
+    
+}
+table.book-list tbody td:nth-of-type(4){
+    display: flex;
+    width:160px;
+    height:40px;
+    position: relative
+}
+table.book-list tbody td:nth-of-type(4) a{
+    flex:1;
+    height: 40px;
+}
+
+div.rating{
+    margin:0;
+    padding:0;
+    position:absolute;
+    background: url('star_sprite.png') no-repeat;
+    background-size:320px 40px;
+    z-index:-100;
+    width:160px;
+    height:40px;
+    background-position:-160px;
+}
+
+
+table.book-list tbody td:nth-of-type(4) input{
+    flex:1;
+    height: 40px;
+    width:32px;
+    -webkit-appearance: none;
+  
+}
+table.book-list tbody td:nth-of-type(4) input:focus{
+  outline:none;
+}
+
+table.book-list input:nth-of-type(1):-webkit-any(:hover,:checked)~div.rating{
+   background-position-x: -128px; 
+}
+table.book-list input:nth-of-type(2):-webkit-any(:hover,:checked)~div.rating{
+   background-position-x: -96px;
+    
+}
+table.book-list input:nth-of-type(3):-webkit-any(:hover,:checked)~div.rating{
+   background-position-x: -64px;
+    
+}
+table.book-list input:nth-of-type(4):-webkit-any(:hover,:checked)~div.rating{
+   background-position-x: -32px;
+    
+}
+table.book-list input:nth-of-type(5):-webkit-any(:hover,:checked)~div.rating{
+   background-position-x: -0px;
+    
+}
